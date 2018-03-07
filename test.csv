@@ -1,0 +1,3 @@
+PROFILE,ACCOUNT_NUM,REGION,TITLE_ID,RESULT,SCORED,LEVEL,TITLE_TEXT,NOTES
+someaudit,123456789101,us-east-1,0.0,INFO,Not Scored,Support,Show report generation info,ARN: arn:aws:iam::123456789101:user/audit-user  TIMESTAMP: 2018-03-05T20:46:49+0000
+someaudit,123456789101,us-east-1,4.1,PASS,Scored,Level 1,Ensure no security groups allow ingress from 0.0.0.0/0 to port 22 (Scored),No Security Groups found in us-east-1 with port 22 TCP open to 0.0.0.0/0
