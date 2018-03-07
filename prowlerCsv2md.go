@@ -88,7 +88,12 @@ func main() {
 			body += "| NOTES  | " + report[i].Notes	+       " |\n"
 			body += "\n\n"
 		}
-		n4, err := f.WriteString(body)
+		var info string
+		info = "^[**Profile:** " + report[1].Profile + "\n"
+		info += "**Account ID:** " + report[1].Account + "\n"
+		info += "**Region:** " + report[1].Region + "]\n\n"
+
+		n4, err := f.WriteString(info+body)
 		fmt.Printf("wrote %d bytes\n", n4)
 		f.Sync()
 	}
