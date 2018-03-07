@@ -89,8 +89,8 @@ func main() {
 			body += "\n\n"
 		}
 		var info string
-		info = "^[**Profile:** " + report[1].Profile + "\n"
-		info += "**Account ID:** " + report[1].Account + "\n"
+		info = "^[**Profile:** " + report[1].Profile + "   " + "\n"
+		info += "**Account ID:** " + report[1].Account + "   " + "\n"
 		info += "**Region:** " + report[1].Region + "]\n\n"
 
 		n4, err := f.WriteString(info+body)
