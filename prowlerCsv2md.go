@@ -44,7 +44,8 @@ func main() {
 		if err != nil {
 			panic(err)
 		}
-        	r := csv.NewReader(bufio.NewReader(data))
+		r := csv.NewReader(bufio.NewReader(data))
+		r.LazyQuotes = true
 		var report []Report
 		for {
 			line, error := r.Read()
